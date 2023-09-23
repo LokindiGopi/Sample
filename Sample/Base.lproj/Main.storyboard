@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="bns-2c-kzM" userLabel="BigContainerSV">
+                                <rect key="frame" x="20" y="79" width="353" height="690.33333333333337"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book a Flight ™️" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRJ-an-HOp">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="27.666666666666668"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="plane" translatesAutoresizingMaskIntoConstraints="NO" id="gtX-DR-8B4">
+                                        <rect key="frame" x="0.0" y="46.666666666666671" width="353" height="158.66666666666663"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="wza-WF-0PH">
+                                        <rect key="frame" x="0.0" y="224.33333333333331" width="353" height="50.666666666666686"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfv-my-d5M">
+                                                <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="50.666666666666664"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="One-way"/>
+                                                <connections>
+                                                    <action selector="oneWayTrip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qtm-kk-dbr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5fQ-uL-aTw">
+                                                <rect key="frame" x="180.66666666666663" y="0.0" width="172.33333333333337" height="50.666666666666664"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Round-trip"/>
+                                                <connections>
+                                                    <action selector="roundTrip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mGv-2K-PO7"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="8mA-kE-n3u">
+                                        <rect key="frame" x="0.0" y="294" width="353" height="120"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Passenger name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1oA-L1-4hv">
+                                                <rect key="frame" x="0.0" y="0.0" width="353" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="shQ-rB-ye2">
+                                                <rect key="frame" x="0.0" y="32" width="353" height="24"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="From" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S1V-Ky-dr1">
+                                                        <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="24"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="To" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GH0-Ws-93i">
+                                                        <rect key="frame" x="180.66666666666663" y="0.0" width="172.33333333333337" height="24"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="cbz-Xd-93d">
+                                                <rect key="frame" x="0.0" y="64" width="353" height="24"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mm/dd/yyyy" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="67w-gG-TPe">
+                                                        <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="24"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="mm/dd/yyyy" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gsi-MY-mmB">
+                                                        <rect key="frame" x="180.66666666666663" y="0.0" width="172.33333333333337" height="24"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number of Passengers" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m6k-vc-MSG">
+                                                <rect key="frame" x="0.0" y="96" width="353" height="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="cbz-Xd-93d" firstAttribute="height" secondItem="8mA-kE-n3u" secondAttribute="height" multiplier="0.25" id="BjE-E2-QLr"/>
+                                            <constraint firstItem="1oA-L1-4hv" firstAttribute="width" secondItem="8mA-kE-n3u" secondAttribute="width" id="FND-HN-kK4"/>
+                                            <constraint firstItem="m6k-vc-MSG" firstAttribute="width" secondItem="8mA-kE-n3u" secondAttribute="width" id="YhI-rW-Lw0"/>
+                                            <constraint firstItem="1oA-L1-4hv" firstAttribute="height" secondItem="8mA-kE-n3u" secondAttribute="height" multiplier="0.2" id="etm-gA-PGc"/>
+                                            <constraint firstItem="m6k-vc-MSG" firstAttribute="height" secondItem="8mA-kE-n3u" secondAttribute="height" multiplier="0.2" id="jhG-Nt-FoW"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="8MZ-I0-DJB">
+                                        <rect key="frame" x="0.0" y="433" width="353" height="31.333333333333314"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kq0-m3-CPP">
+                                                <rect key="frame" x="0.0" y="0.0" width="172.66666666666666" height="31.333333333333332"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Book"/>
+                                                <connections>
+                                                    <action selector="bookTicket:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VhL-qO-kWt"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VXb-4x-rha">
+                                                <rect key="frame" x="180.66666666666663" y="0.0" width="172.33333333333337" height="31.333333333333332"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Clear"/>
+                                                <connections>
+                                                    <action selector="clear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NL9-lL-9j8"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YZI-c2-VUs">
+                                        <rect key="frame" x="0.0" y="483.33333333333337" width="353" height="207"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="gtX-DR-8B4" firstAttribute="height" secondItem="bns-2c-kzM" secondAttribute="height" multiplier="0.23" id="PcL-UR-t71"/>
+                                    <constraint firstItem="8MZ-I0-DJB" firstAttribute="height" secondItem="bns-2c-kzM" secondAttribute="height" multiplier="0.0452946" id="TcV-32-PCP"/>
+                                    <constraint firstItem="8mA-kE-n3u" firstAttribute="height" secondItem="wza-WF-0PH" secondAttribute="height" multiplier="2.37321" id="WW4-9T-ajT"/>
+                                    <constraint firstItem="8mA-kE-n3u" firstAttribute="width" secondItem="bns-2c-kzM" secondAttribute="width" id="ggq-P3-QPs"/>
+                                    <constraint firstItem="YZI-c2-VUs" firstAttribute="height" secondItem="bns-2c-kzM" secondAttribute="height" multiplier="0.3" id="lew-9s-FY3"/>
+                                    <constraint firstItem="jRJ-an-HOp" firstAttribute="height" secondItem="bns-2c-kzM" secondAttribute="height" multiplier="0.04" id="ylt-Zl-XeY"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bns-2c-kzM" secondAttribute="trailing" constant="20" id="Lul-mY-7d8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bns-2c-kzM" secondAttribute="bottom" constant="20" id="jWo-HL-SPp"/>
+                            <constraint firstItem="bns-2c-kzM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="kS1-9H-8m2"/>
+                            <constraint firstItem="bns-2c-kzM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="yv7-Ef-E4w"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bookTicketBTN" destination="Kq0-m3-CPP" id="LVT-Bq-eNW"/>
+                        <outlet property="cityFromTF" destination="S1V-Ky-dr1" id="Syc-kS-kbm"/>
+                        <outlet property="cityToTF" destination="GH0-Ws-93i" id="52P-6T-tn5"/>
+                        <outlet property="custNameTF" destination="1oA-L1-4hv" id="qTm-9d-fZm"/>
+                        <outlet property="departureDateTF" destination="67w-gG-TPe" id="cTd-gR-KGM"/>
+                        <outlet property="numPassTF" destination="m6k-vc-MSG" id="QCC-mo-vk5"/>
+                        <outlet property="oneWayTripBTN" destination="sfv-my-d5M" id="ohW-Th-glK"/>
+                        <outlet property="returnDateTF" destination="Gsi-MY-mmB" id="JPJ-BP-qWa"/>
+                        <outlet property="roundTripBTN" destination="5fQ-uL-aTw" id="LOi-6H-nqF"/>
+                        <outlet property="textlabel" destination="YZI-c2-VUs" id="3JW-zU-9Ji"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34" y="-215"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="plane" width="309.66665649414062" height="174.33332824707031"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
